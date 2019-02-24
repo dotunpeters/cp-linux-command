@@ -8,6 +8,8 @@ int main (void)
     //use a sample file i include called "student.csv"
     string file_copy = get_string("input file name to copy: ");
     string file_paste = get_string("input file name to paste: ");
+
+    //file pointers to open for read and for append
     FILE*ptr_copy = fopen(file_copy, "r");
     FILE*ptr_paste = fopen(file_paste, "a");
     char ch = fgetc(ptr_copy);
